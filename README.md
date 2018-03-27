@@ -105,6 +105,18 @@ Factory metaphor: Imagine a factory that has a mold for making rubber ducks. The
 
 ![image](https://cloud.githubusercontent.com/assets/6520345/18133637/3e2d48e0-6f50-11e6-80c7-0336334d8c91.png)
 
+From the docs:
+> A Schema is an object that defines the structure of any documents that will be stored in your MongoDB collection; it enables you to define types and validators for all of your data items.
+
+> A Connection is a fairly standard wrapper around a database connection.
+
+> A Model is an object that gives you easy access to a named collection, allowing you to query the collection and use the Schema to validate any documents you save to that collection. It is created by combining a Schema, a Connection, and a collection name.
+
+> Finally, a Document is an instantiation of a Model that is tied to a specific document in your collection.
+
+> *Source: (https://www.mongodb.com/blog/post/the-mean-stack-mistakes-youre-probably-making)*
+
+
 ## MongoDB & Mongoose setup
 
 Let's do a quick activity and get Mongoose and MongoDB running.
