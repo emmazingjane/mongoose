@@ -292,8 +292,21 @@ Now in the REPL that opens, try making a single instance of a person with the co
     console.log("saved new person: ", newPerson);
   });
 ```
+Or try creating a new todo item:
 
-The above logs to the terminal the `newPerson` success object:
+```js  
+  var buyMilk = new db.Todo({
+    name: 'buy milk',
+    description: 'buy a carton of 2% milk'
+  });
+
+  buyMilk.save(function(err, newTodo) {
+    if(err) { return console.log(err) }
+    console.log("saved new task: ", newTodo);
+  });
+```
+
+The above logs to the terminal the `newPerson` (or `newTodo`) success object:
 
 ```bash
 saved new person:  {
