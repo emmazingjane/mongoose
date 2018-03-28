@@ -110,6 +110,9 @@ $(document).ready(function() {
 
         // render all todos to view
         render();
+      }, 
+      error: function onError(err) {
+        console.log(err)
       }
     });
   })
